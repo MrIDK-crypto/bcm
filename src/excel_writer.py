@@ -23,6 +23,7 @@ import zipfile
 from pathlib import Path
 
 from openpyxl import load_workbook
+from openpyxl.comments import Comment
 from openpyxl.formatting.rule import ColorScaleRule
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
@@ -366,6 +367,23 @@ def write(template_path: Path, output_path: Path,
     _sensitivity_grid(ws, top_row=21)
     _conditional_color_scale(ws, "B24:K32")
     _scenario_reference_rows(ws, top_row=33, bundle=bundle)
+
+    # Move Scenarios_Updated to the first tab so it opens by default.
+    # Final order: Scenarios_Updated, AEIS, Comps.
+    idx = wb.sheetnames.index(SHEET_NAME)
+    if idx != 0:
+        wb.move_sheet(SHEET_NAME, offset=-idx)
+
+    # Add a note on AEIS!A1 pointing the PM to the new sheet. A comment is
+    # used instead of inserting a row (which would shift formula references
+    # like L7 =F21) or overwriting the "AEIS Equity" label.
+    if "AEIS" in wb.sheetnames:
+        aeis_a1 = wb["AEIS"]["A1"]
+        aeis_a1.comment = Comment(
+            "Updated scenarios on Scenarios_Updated tab. "
+            "Inputs on this sheet not modified.",
+            "Pipeline",
+        )
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     wb.save(output_path)

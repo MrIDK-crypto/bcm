@@ -72,10 +72,12 @@ SUMMARY_BLOCK: str = OPENING_A
 VIEW_VARIANT_A: str = (
     "Bull case opens up if CY27 DC growth prints above *40 percent* and BAC "
     "consensus moves toward *$13* EPS. A second hyperscaler Kyber 800V "
-    "design win in 2H 2026 is the cleanest single catalyst. Bear case takes "
-    "hold on Q2 DC "
-    "moderation below mid 30 percent, softening Industrial and Medical bookings off the *+14 "
-    "percent* QoQ Q1 base, or a BAC PT cut back toward *$400*."
+    "design win in 2H 2026 is the cleanest single catalyst. Bear case "
+    "takes hold if Street stops raising estimates and the AMAT/LRCX "
+    "premium compresses back toward the historical band. Markers to watch: "
+    "BAC pulling back its *$430* PT, Cowen staying Hold through Q2 "
+    "results, or DC growth moderating below mid 30 percent year over year "
+    "and dragging consensus EPS back toward *$10.83*."
 )
 
 VIEW_VARIANT_B: str = (
@@ -133,7 +135,11 @@ SECTIONS: list[tuple[str, list[str]]] = [
             "implies the market is weighting bull near *47 percent* and bear "
             "near *20 percent*, materially more bullish than our equal "
             "weighted prior, which means the stock is paying for upside that "
-            "has not yet printed in earnings or backlog.",
+            "has not yet printed in earnings or backlog. Bull case here "
+            "reflects Cowen's higher EPS at BAC's higher multiple, that is, "
+            "*the more optimistic analyst is right*. A scenario where the "
+            "catalysts above actually fire (EPS toward $13, multiple "
+            "expansion to 38 to 40x) would put fair value *closer to $500*.",
         ],
     ),
     ("What Would Change My View", [VIEW_BLOCK]),
