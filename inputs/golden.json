@@ -1,0 +1,43 @@
+{
+  "_comment": "Layer 3 tripwire. extract.py refuses to run if any slot is null, and aborts if any extracted value drifts. Verify each value against the cited source before kicking off the pipeline.",
+
+  "_q1_press_release": "Q126_PR_5-4-26.pdf",
+  "q1_revenue_usd_m": 511.0,
+  "q1_revenue_usd_m__source": "p5 highlights: 'Revenue was $511 million'; p9 income statement: 'Revenue, net $ 511.0'",
+  "q1_eps_non_gaap": 2.09,
+  "q1_eps_non_gaap__source": "p5: 'non-GAAP EPS was $2.09'; p14 non-GAAP recon: 'Non-GAAP earnings per share $ 2.09'",
+  "q2_guide_rev_mid_usd_m": 540.0,
+  "q2_guide_rev_mid_usd_m__source": "p6: 'Revenue $540 million +/- $20 million'; p15 Q2 recon range $520-$560 confirms midpoint",
+  "q2_guide_eps_mid": 2.18,
+  "q2_guide_eps_mid__source": "p6: 'Non-GAAP EPS $2.18 +/- $0.25'; p15 Q2 non-GAAP recon $1.93-$2.43 confirms midpoint",
+
+  "_bofa": "BAC__buy__5-5-26.pdf",
+  "bac_pt": 430.0,
+  "bac_pt__source": "p1 header 'PO: 430.00 USD'; p1 Key Changes 'Price Obj. 330.00 -> 430.00'",
+  "bac_cy27_pe": 36.0,
+  "bac_cy27_pe__source": "p1 body: 'now on 36x CY27E PE (vs. 33x prior...)'",
+  "bac_cy27_eps_new": 12.00,
+  "bac_cy27_eps_new__source": "p1 Key Changes '2027E EPS 9.90 12.00'; p1 estimates table 'EPS 3.71 6.41 9.36 12.00 14.12'; p3 fiscal table 'FY27E ... $9.90 $12.00'",
+  "bac_cy27_eps_prior": 9.90,
+  "bac_cy27_eps_prior__source": "p1 Key Changes '2027E EPS 9.90 12.00' (left column = prior)",
+
+  "_td_cowen": "COWN__hold__5-4-26.pdf",
+  "cowen_pt": 350.0,
+  "cowen_pt__source": "p1 header 'Price Target: $350.00 (Prior $300.00)'; p1 rationale 'Remain Hold (PT $350, 28x CY27)'",
+  "cowen_cy27_pe": 28.0,
+  "cowen_cy27_pe__source": "p1: 'Remain Hold (PT $350, 28x CY27)'",
+  "cowen_cy27_eps_new": 12.50,
+  "cowen_cy27_eps_new__source": "p1 prose: 'we see ~$9.80 and $12.50 in EPS for CY26/27'; p1 EPS row '$6.41 $9.79 $12.50'; p4 model table",
+
+  "_market_data": "Current price as of May 4 per BAC stock-data block",
+  "current_price_may_4": 387.03,
+  "current_price_may_4__source": "BAC p1 header 'Price: 387.03 USD'; BAC p1 Stock Data 'Price 387.03 USD'",
+
+  "_bloomberg_consensus": "From BAC p1 row 'Consensus EPS (Bloomberg) 8.75 10.83 12.33' aligned to header 'Estimates (Dec) (US$) 2024A 2025A 2026E 2027E 2028E' (consensus row has 3 forward years: CY26E, CY27E, CY28E)",
+  "bloomberg_cy26_consensus_eps": 8.75,
+  "bloomberg_cy26_consensus_eps__source": "BAC p1 consensus row, position 1 of 3 (CY26E); also appears in Cowen p1 consensus EPS row position 2",
+  "bloomberg_cy27_consensus_eps": 10.83,
+  "bloomberg_cy27_consensus_eps__source": "BAC p1 consensus row, position 2 of 3 (CY27E); also appears in Cowen p1 consensus EPS row position 3",
+  "bloomberg_cy28_consensus_eps": 12.33,
+  "bloomberg_cy28_consensus_eps__source": "BAC p1 consensus row, position 3 of 3 (CY28E); single-source (Cowen does not publish CY28 consensus)"
+}

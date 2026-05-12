@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Pipeline outputs — ignored, but keep the directory present and the
+# hand-authored qualitative.json (loaded as input, not generated)
+outputs/*
+!outputs/.gitkeep
+!outputs/qualitative.json
+
+# Subscription analyst reports + proprietary source spreadsheet
+# (kept locally in inputs/ but never pushed to a public repo)
+inputs/*.pdf
+inputs/*.xlsx

@@ -1,0 +1,35 @@
+{
+  "_comment": "Hand-authored from direct reading of BAC and Cowen PDFs. BAC is bull-side (BUY-rated); Cowen is bear-side (HOLD with valuation concern). Each bullet under 15 words and contains at least one AEIS whitelist token. No verbatim sentence-level quotes from the source PDFs.",
+
+  "bac": {
+    "source_file": "BAC__buy__5-5-26.pdf",
+    "bull_case_reasons": [
+      "Semi sales +6% QoQ in Q2 with 2H ramping above 30% YoY into CY27",
+      "DCC outlook raised to mid-30s% for CY26 with 800V modules now sampling",
+      "eVoS, eVerest, and NavX driving semi share gains in memory and logic",
+      "WFE backdrop +23% in CY26 to $144bn and +27% in CY27 to $183bn"
+    ],
+    "key_debate_flagged": "Whether 36x CY27 PE holds as DC and semi acceleration push EPS into CY28.",
+    "catalysts": [
+      "800V Kyber rack on Rubin in 2027 lifts content per system into CY28",
+      "I&M bookings +14% QoQ in Q1 with Q2 and Q3 catch-up expected",
+      "Thailand capacity adds $1bn, taking total above $3.5bn exiting CY26"
+    ]
+  },
+
+  "cowen": {
+    "source_file": "COWN__hold__5-4-26.pdf",
+    "bear_case_reasons": [
+      "AEIS PE premium to AMAT and LRCX sits at 25% vs 5% three-year average",
+      "DC needs +40% growth from mid-30s% for the premium to be defensible",
+      "CY27 semi growth modeled at 22%, slightly below WFE growth of 27%",
+      "AMAT exposure to older tool mix can pressure margin into CY27"
+    ],
+    "key_debate_flagged": "Can AEIS hold a 25% PE premium to AMAT and LRCX without DC reaccelerating to 40%.",
+    "catalysts": [
+      "Second wave of DC customers from enterprise and neocloud ramping in CY27",
+      "PECVD and dielectric etch share gains push CY27 semi growth above WFE",
+      "Q2 gross margin to 40.45% with guide ahead of Street consensus"
+    ]
+  }
+}
